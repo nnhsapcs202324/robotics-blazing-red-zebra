@@ -206,7 +206,7 @@ public class Finch extends Robot {
      * @param blueIntensity - blue intensity (Range: 0 to 100)
      */
     private void setTriLED(int port, int redIntensity, int greenIntensity, int blueIntensity) {
-        if ((port < 1) || (port > 6)) {		// Check that port is valid
+        if ((port < 1) || (port > 6)) {        // Check that port is valid
             return;
         }
         redIntensity = clampParameterToBounds(redIntensity,0,100);
